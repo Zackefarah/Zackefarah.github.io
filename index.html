@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body style="padding: 0px; margin:0px">
+    <header style=" height: 40px; background-color:black; color: white" >
+        <h1 style="display: inline;"> <a href="index.html">XYZCompany</a></h1>
+        <div style="width: 1000px; text-align: center; display: inline-block;">
+
+            <h1 style="display: inline;" id="header-text">Please Log In</h1>
+        </div>
+
+    </header>
+    <div id="before-login-content" style="height: 80vh; display: flex; justify-content:center; align-items:center">
+        
+        <form style="display: flex; flex-direction: column" action="">
+            <h3 style="color: red;" id="error-message"></h3>
+            <h2>Enter Info!</h2>
+            <input id="name" style="padding: 20px;border-radius:12px;width:200px; margin-bottom: 20px;" type="text" placeholder="Enter Name">
+            <input id="pass" style="padding: 20px;border-radius:12px;width:200px; margin-bottom: 20px;" type="text" placeholder="Enter Password">
+            
+            <button id="login" type="button" style="background-color:aqua; padding: 20px; border-radius:12px">Log In</button>
+        </form>
+    </div>
+
+    <div id="after-login-content" style="display: none">
+
+        <div   style="height: 80vh; display: flex; justify-content:center; align-items:center;flex-direction: column">
+            <h2>Welcome!</h2>
+            <p>Thank You For Logging in</p>
+            <p id="user-info"></p>
+            <button id="logout" type="button" style="background-color:aqua; padding: 20px; border-radius:12px">Log Out</button>
+        </div>
+    </div>
+
+    <footer style="height: 60px; background-color:black; color: white; text-align: center;margin-top: 90px;">
+        <h3>Dynamic Login Form</h3>
+    </footer> 
+    <script src="main.js"></script>     
+</body>
+</html>
